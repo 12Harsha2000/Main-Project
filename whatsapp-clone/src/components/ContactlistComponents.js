@@ -4,10 +4,16 @@ const Container = styled.div`
 display:flex;
 flex-direction: coloumn;
 height:100%
-flex: 1.6;
+flex: 0.8;
+`
+const ProfileInfoDiv = styled.div`
+display: flex;
+flex-direction: row;
+background: ;
 `
 const ContactlistComponent = () => {
     return <Container>"ContactlistComponent"</Container>
 }
 
 export default ContactlistComponent;
+  
