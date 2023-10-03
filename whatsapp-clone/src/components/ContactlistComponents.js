@@ -53,7 +53,6 @@ const ContactItem =styled.div`
     cursor: pointer;
     padding: 15px 12px;
 `;
-
 const ProfileIcon = styled(ProfileImage)` 
 width: 38px;
 height: 38px;
@@ -95,19 +94,19 @@ const ContactListComponent = () => {
     return( 
         <Container>
         <ProfileInfoDiv>
-            <ProfileImage src= "/profile/profilephoto.jpeg"/>
+            <ProfileImage src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2_zKjfB6e4CgArA9wBCL-jNJofn7_tLjNgg&usqp=CAU"/>
         </ProfileInfoDiv>
         <SearchBox>
             <SearchContainer>
-                <SearchIcon src={"/search-icon.svg"}/>
+                <SearchIcon src="/search-icon.svg"/>
                 <SearchInput placeholder="Search or start new chat" />
             </SearchContainer>
         </SearchBox>
         {contactList.map((userData)=>(
         <ContactComponent userData={userData}/>
         ))}
-          </Container>
+        </Container>
     );
 };
 
-export default ContactListComponent;
+export default ContactListComponent; 

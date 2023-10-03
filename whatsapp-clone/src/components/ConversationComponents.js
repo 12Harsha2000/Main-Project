@@ -9,7 +9,6 @@ height: 100%;
 flex: 2;
 background: #f6f7f8;
 `;
-
 const ProfileHeader=styled.div`
     display: flex;
     flex-direction: row;
@@ -18,13 +17,11 @@ const ProfileHeader=styled.div`
     align-items: center;
     gap : 10px;
 `;
-
 const ProfileImage =styled.img`
 width: 40px;
 height: 40px;
 border-radius: 50%;
 `;
-
 const ChatBox =styled.div`
 display: flex;
 background: #f0f0f0;
@@ -32,27 +29,23 @@ padding: 10px;
 align-items: center;
 bottom : 0;
 `;
-
 const EmojiImage =styled.img`
 width:30px;
 height: 28px;
 opacity: 0.4;
 cursor: pointer;
 `;
-
 const MessageContainer = styled.div`
 display: flex;
 flex-direction: column;
 height: 100%;
 background: #e5ddd6;
 `;
-
 const MessageDiv = styled.div`
 justify-content: ${(props) => (props.isYours ?'flex-end':'flex-start') };
 display:flex;
 margin: 5px 16px;
 `;
-
 const Message = styled.div`
 background: ${(props) => (props.isYours ?"#daf8cb":"white" )};
 max-width:50%;
@@ -65,7 +58,7 @@ const ConversationComponent = () => {
     return (
     <Container>
         <ProfileHeader>
-        <ProfileImage src="/profile/IMG_3464.jpg" />
+        <ProfileImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjxR5lwZEs_MDM8ix8BAdm5L5PSjeUX8FOYQ&usqp=CAU" />
         Abhay Sharma
         </ProfileHeader>
         <MessageContainer>
@@ -78,7 +71,7 @@ const ConversationComponent = () => {
         </MessageContainer>
         <ChatBox>
             <SearchContainer>
-            <EmojiImage src={"/data.svg"}/>
+            <EmojiImage src="/data.svg"/>
             <SearchInput placeholder="Type a message"/>
             </SearchContainer>
         </ChatBox>
